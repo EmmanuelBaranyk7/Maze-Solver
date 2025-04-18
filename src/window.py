@@ -40,3 +40,19 @@ class Line():
         canvas.create_line(
             self.p1.x, self.p1.y, self.p2.x, self.p2.y, fill=fill_color, width=2
         )
+
+'''
+    def draw(self, x1, y1, x2, y2):
+        if self.has_left_wall:
+            wall = Line((x1, y1), (x2-(x2-x1), y2-(y2-y1)))
+            wall.draw(self._win.canvas, "black")
+        if self.has_right_wall:
+            wall = Line((x1-(x2-x1), y1-(y2-y1)), (x2, y2))
+            wall.draw(self._win.canvas, "black")
+        if self.has_top_wall:
+            wall = Line((x1, y1), (x2, y2-(y2-y1)))
+            wall.draw(self._win.canvas, "black")
+        if self.has_bottom_wall:
+            wall = Line((x1, y1-(y2-y1)), (x2, y2))
+            wall.draw(self._win.canvas, "black")
+'''
